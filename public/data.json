@@ -1,0 +1,323 @@
+{
+    "brands": [
+      {
+        "name": "Toyota",
+        "headquarters": "Toyota City, Japan",
+        "founded": 1937,
+        "notableModels": ["Toyota Camry", "Toyota Corolla", "Toyota RAV4", "Toyota Prius"],
+        "logo": "https://example.com/toyota-logo.jpg",
+        "products": [
+          {
+            "id": 1,
+            "image": "toyota_product1.jpg",
+            "name": "Toyota Camry",
+            "brandName": "Toyota",
+            "type": "Sedan",
+            "price": 25000,
+            "shortDescription": "The Toyota Camry, a popular and reliable sedan, has been a hallmark of the Toyota lineup for years. Known for its smooth ride, comfortable interior, and impressive fuel efficiency, the Camry is a top choice for families and commuters alike. With a sleek design and advanced technology, this sedan delivers both style and substance. Whether you're tackling daily commutes or embarking on road trips, the Camry offers a dependable and enjoyable driving experience.",
+            "rating": 4.5,
+            "description": "The Toyota Camry is a symbol of reliability, quality, and a smooth driving experience. With its spacious interior, comfortable seats, and user-friendly infotainment system, it caters to drivers seeking both practicality and style. The Camry's advanced safety features provide peace of mind on the road. It's the perfect sedan for those who appreciate a balance between performance, comfort, and affordability."
+          },
+          {
+            "id": 2,
+            "image": "toyota_product2.jpg",
+            "name": "Toyota Corolla",
+            "brandName": "Toyota",
+            "type": "Sedan",
+            "price": 22000,
+            "shortDescription": "The Toyota Corolla, an affordable and fuel-efficient sedan, has been a favorite among budget-conscious buyers. Its legendary reliability and low cost of ownership make it an excellent choice for those seeking a practical and economical vehicle. With a comfortable interior and a reputation for longevity, the Corolla has earned its place as one of the best-selling cars in the world.",
+            "rating": 4.2,
+            "description": "The Toyota Corolla's affordability and fuel efficiency make it a standout in the sedan category. Its spacious cabin and excellent fuel economy ensure a pleasant and cost-effective driving experience. The Corolla's reputation for durability is well-deserved, and it has a straightforward, user-friendly infotainment system."
+          },
+          {
+            "id": 3,
+            "image": "toyota_product3.jpg",
+            "name": "Toyota RAV4",
+            "brandName": "Toyota",
+            "type": "SUV",
+            "price": 28000,
+            "shortDescription": "The Toyota RAV4, a versatile and stylish SUV, offers a compelling blend of comfort, performance, and utility. With its spacious interior and advanced safety features, the RAV4 is an excellent choice for families. Whether you're navigating city streets or embarking on outdoor adventures, this SUV is designed to handle a variety of driving conditions while keeping passengers safe and comfortable.",
+            "rating": 4.7,
+            "description": "The Toyota RAV4 is a versatile SUV that strikes a balance between style, performance, and utility. Its spacious interior is complemented by a user-friendly infotainment system. With advanced safety features, the RAV4 ensures a secure and comfortable ride, whether you're driving in the city or exploring rugged terrains."
+          },
+          {
+            "id": 4,
+            "image": "toyota_product4.jpg",
+            "name": "Toyota Prius",
+            "brandName": "Toyota",
+            "type": "Hybrid Car",
+            "price": 27000,
+            "shortDescription": "The Toyota Prius, an eco-friendly and efficient hybrid car, has set the standard for environmentally conscious driving. With its hybrid powertrain, the Prius offers excellent fuel efficiency and low emissions, making it a wise choice for those seeking to reduce their carbon footprint. Its practical hatchback design provides ample cargo space, and its user-friendly technology ensures a smooth and enjoyable ride.",
+            "rating": 4.0,
+            "description": "The Toyota Prius is a pioneer in eco-friendly driving. It combines outstanding fuel efficiency with a spacious interior and a practical hatchback design. Its hybrid powertrain is engineered for both performance and environmental responsibility. With a reputation for reliability and innovation, the Prius is the ideal choice for those who want to contribute to a greener planet without compromising on functionality."
+          }
+        ]
+      },
+      {
+        "name": "Ford",
+        "headquarters": "Dearborn, Michigan, USA",
+        "founded": 1903,
+        "notableModels": ["Ford F-150", "Ford Mustang", "Ford Explorer", "Ford Focus"],
+        "logo": "https://example.com/ford-logo.jpg",
+        "products": [
+          {
+            "id": 5,
+            "image": "ford_product1.jpg",
+            "name": "Ford F-150",
+            "brandName": "Ford",
+            "type": "Truck",
+            "price": 35000,
+            "shortDescription": "The Ford F-150, a powerful and rugged truck, has earned its place as America's best-selling pickup. Renowned for its exceptional towing and payload capabilities, the F-150 is a workhorse that's equally at home on job sites and family road trips. Its robust construction and advanced technology make it a top choice for those who demand reliability and performance.",
+            "rating": 4.4,
+            "description": "The Ford F-150 is an American icon among trucks, combining power and ruggedness with advanced technology and comfort. Its impressive towing and payload capacities make it ideal for work or play. The F-150's spacious and tech-savvy interior ensures that even long trips are comfortable and entertaining. With its reputation for toughness, it's no surprise that the F-150 is the best-selling pickup in the United States."
+          },
+          {
+            "id": 6,
+            "image": "ford_product2.jpg",
+            "name": "Ford Mustang",
+            "brandName": "Ford",
+            "type": "Sports Car",
+            "price": 42000,
+            "shortDescription": "The Ford Mustang, an iconic and fast sports car, has been an American legend for decades. Known for its timeless design and exhilarating performance, the Mustang offers an unmatched driving experience. Whether you're a car enthusiast or simply seeking a thrilling ride, the Mustang's power and style never disappoint.",
+            "rating": 4.6,
+            "description": "The Ford Mustang is a symbol of American muscle and style. Its classic design and powerful engines have made it an icon in the world of sports cars. The Mustang offers a thrilling and exhilarating driving experience, and its reputation for performance is well-earned. Whether you're cruising the open highway or challenging the track, the Mustang delivers an unforgettable ride."
+          },
+          {
+            "id": 7,
+            "image": "ford_product3.jpg",
+            "name": "Ford Explorer",
+            "brandName": "Ford",
+            "type": "SUV",
+            "price": 32000,
+            "shortDescription": "The Ford Explorer, a family-friendly and comfortable SUV, provides a spacious and refined ride for passengers. With three rows of seating and a host of safety features, the Explorer is a top choice for those with active lifestyles. Whether you're navigating city streets or exploring off-road trails, this SUV offers versatility and peace of mind.",
+            "rating": 4.3,
+            "description": "The Ford Explorer is the perfect choice for families and adventurers. Its roomy interior and advanced safety features ensure comfort and security. With three rows of seating, it can accommodate your entire crew or plenty of cargo. The Explorer's versatility makes it equally at home on city streets or off the beaten path."
+          },
+          {
+            "id": 8,
+            "image": "ford_product4.jpg",
+            "name": "Ford Focus",
+            "brandName": "Ford",
+            "type": "Sedan",
+            "price": 25000,
+            "shortDescription": "The Ford Focus, a compact and efficient sedan, is designed for urban dwellers and commuters seeking a nimble and economical vehicle. Its agility and fuel efficiency make it ideal for navigating crowded streets and tight parking spaces. With a user-friendly infotainment system, the Focus adds convenience to your daily drive.",
+            "rating": 4.1,
+            "description": "The Ford Focus is a compact sedan designed for efficiency and ease of handling in urban environments. Its nimble nature and excellent fuel economy make it a great choice for city driving. The Focus's user-friendly infotainment system ensures that you stay connected and entertained on the go. Whether you're darting through traffic or searching for that perfect parking spot, the Focus simplifies your daily driving experience."
+          }
+        ]
+      },
+      {
+        "name": "BMW",
+        "headquarters": "Munich, Germany",
+        "founded": 1916,
+        "notableModels": ["BMW 3 Series", "BMW 5 Series", "BMW X5", "BMW 7 Series"],
+        "logo": "https://example.com/bmw-logo.jpg",
+        "products": [
+          {
+            "id": 9,
+            "image": "bmw_product1.jpg",
+            "name": "BMW 3 Series",
+            "brandName": "BMW",
+            "type": "Sedan",
+            "price": 45000,
+            "shortDescription": "The BMW 3 Series, an elegant and sporty sedan, embodies the essence of the BMW driving experience. Known for its precise handling, powerful engine options, and luxurious interior, the 3 Series is a top choice for those who demand performance and style. Whether you're carving through mountain roads or cruising on the highway, the 3 Series offers a thrilling and comfortable ride.",
+            "rating": 4.7,
+            "description": "The BMW 3 Series is a true driver's car, combining sporty elegance with precision engineering. Its performance and handling are legendary in the automotive world. The 3 Series boasts a luxurious interior, cutting-edge technology, and a range of powerful engines that cater to enthusiasts seeking both exhilaration and refinement. Whether you're exploring twisty mountain roads or embarking on long highway journeys, the 3 Series guarantees a captivating and comfortable drive."
+          },
+          {
+            "id": 10,
+            "image": "bmw_product2.jpg",
+            "name": "BMW 5 Series",
+            "brandName": "BMW",
+            "type": "Sedan",
+            "price": 52000,
+            "shortDescription": "The BMW 5 Series, a luxurious and stylish sedan, sets a high standard for premium vehicles. With its opulent interior, advanced technology, and a range of potent engines, the 5 Series delivers a refined and powerful driving experience. Whether you're commuting in style or embarking on a long journey, this sedan offers comfort and sophistication.",
+            "rating": 4.6,
+            "description": "The BMW 5 Series represents the epitome of luxury and style in the sedan category. Its lavish interior, state-of-the-art technology, and a selection of high-performance engines offer an impeccable driving experience. Whether you're a business executive seeking a comfortable and prestigious ride or a road trip enthusiast, the 5 Series combines comfort and sophistication in a way that few vehicles can match."
+          },
+          {
+            "id": 11,
+            "image": "bmw_product3.jpg",
+            "name": "BMW X5",
+            "brandName": "BMW",
+            "type": "SUV",
+            "price": 56000,
+            "shortDescription": "The BMW X5, a versatile and high-performance SUV, combines luxury with off-road capability. With its spacious and well-appointed interior, advanced safety features, and strong engine options, the X5 is a top choice for families and adventurers. Whether you're traversing city streets or exploring rugged terrain, this SUV offers versatility and premium comfort.",
+            "rating": 4.8,
+            "description": "The BMW X5 redefines what it means to be a luxury SUV. It combines a lavish and spacious interior with top-notch safety features and powerful engines. The X5 is designed for families and adventure seekers who want a premium experience, whether they're tackling urban streets or conquering off-road challenges. With the X5, versatility and luxury go hand in hand."
+          },
+          {
+            "id": 12,
+            "image": "bmw_product4.jpg",
+            "name": "BMW 7 Series",
+            "brandName": "BMW",
+            "type": "Luxury Sedan",
+            "price": 75000,
+            "shortDescription": "The BMW 7 Series, an ultra-luxurious and comfortable sedan, redefines opulence and performance. With its sumptuous interior, cutting-edge technology, and powerful engines, the 7 Series is the pinnacle of BMW's sedan lineup. Whether you're chauffeured or driving yourself, this luxury sedan offers an unparalleled experience of elegance and innovation.",
+            "rating": 4.9,
+            "description": "The BMW 7 Series is the embodiment of opulence and innovation in the world of luxury sedans. Its interior is a marvel of craftsmanship and technology, while its engines offer commanding performance. The 7 Series is designed for those who demand the very best in luxury and comfort, whether you're sitting in the back seat or behind the wheel. This sedan provides a journey of unmatched prestige and cutting-edge technology."
+          }
+        ]
+      },
+      {
+        "name": "Mercedes-Benz",
+        "headquarters": "Stuttgart, Germany",
+        "founded": 1926,
+        "notableModels": ["Mercedes-Benz C-Class", "Mercedes-Benz E-Class", "Mercedes-Benz S-Class", "Mercedes-Benz GLE"],
+        "logo": "https://example.com/mercedes-logo.jpg",
+        "products": [
+          {
+            "id": 13,
+            "image": "mercedes_product1.jpg",
+            "name": "Mercedes-Benz C-Class",
+            "brandName": "Mercedes-Benz",
+            "type": "Luxury Sedan",
+            "price": 52000,
+            "shortDescription": "The Mercedes-Benz C-Class, a premium and sophisticated luxury sedan, combines elegance with cutting-edge technology. With a refined interior, advanced safety features, and a range of powerful engines, the C-Class offers a first-class driving experience. Whether you're commuting in style or embarking on a grand journey, this luxury sedan delivers an exquisite balance of performance and comfort.",
+            "rating": 4.7,
+            "description": "The Mercedes-Benz C-Class is the epitome of luxury and sophistication in the sedan segment. Its interior is adorned with premium materials and advanced technology, while the powerful engines under the hood ensure a thrilling driving experience. The C-Class is designed for those who appreciate the finer things in life, whether they're navigating city streets or embarking on long-distance travels. This luxury sedan seamlessly combines performance and comfort."
+          },
+          {
+            "id": 14,
+            "image": "mercedes_product2.jpg",
+            "name": "Mercedes-Benz E-Class",
+            "brandName": "Mercedes-Benz",
+            "type": "Luxury Sedan",
+            "price": 58000,
+            "shortDescription": "The Mercedes-Benz E-Class, a top-tier luxury sedan with advanced features, exemplifies the pinnacle of automotive sophistication. With an opulent and tech-rich interior, cutting-edge safety technology, and a selection of potent powertrains, the E-Class offers an unrivaled experience in luxury and performance. Whether you're navigating urban streets or embarking on a cross-country adventure, this sedan delivers a journey of distinction.",
+            "rating": 4.8,
+            "description": "The Mercedes-Benz E-Class is the ultimate expression of luxury and technology in the world of sedans. Its opulent interior is equipped with the latest advancements in safety and infotainment. With powerful engines and a comfortable ride, the E-Class delivers a unique and prestigious driving experience. Whether you're exploring the city or embarking on an extended cross-country road trip, this sedan offers an unmatched journey of distinction and luxury."
+          },
+          {
+            "id": 15,
+            "image": "mercedes_product3.jpg",
+            "name": "Mercedes-Benz GLE",
+            "brandName": "Mercedes-Benz",
+            "type": "SUV",
+            "price": 65000,
+            "shortDescription": "The Mercedes-Benz GLE, a versatile and luxurious SUV, combines refinement with off-road capability. With its spacious and opulent cabin, advanced safety features, and powerful engine options, the GLE provides a first-class experience for families and adventure seekers. Whether you're navigating city streets or conquering rugged terrains, this SUV offers versatility and luxury in every journey.",
+            "rating": 4.7,
+            "description": "The Mercedes-Benz GLE is a luxury SUV that blends elegance with off-road capability. Its cabin is spacious and filled with luxurious features and technology. The GLE ensures a first-class experience for families and those seeking adventure, thanks to its advanced safety features and potent engines. Whether you're maneuvering through city streets or tackling rough terrains, this SUV offers a combination of versatility and luxury in every drive."
+          },
+          {
+            "id": 16,
+            "image": "mercedes_product4.jpg",
+            "name": "Mercedes-Benz S-Class",
+            "brandName": "Mercedes-Benz",
+            "type": "Luxury Sedan",
+            "price": 85000,
+            "shortDescription": "The Mercedes-Benz S-Class, an embodiment of automotive excellence, defines the ultimate in luxury and innovation. With an exquisite and tech-laden interior, cutting-edge safety and autonomous driving features, and a range of commanding engines, the S-Class offers an unparalleled experience in opulence and performance. Whether you're chauffeured or behind the wheel, this luxury sedan provides a journey of unmatched prestige and technology.",
+            "rating": 4.9,
+            "description": "The Mercedes-Benz S-Class sets the highest standard for opulence and innovation in the world of luxury sedans. Its interior is a marvel of craftsmanship and technology, while advanced safety and autonomous driving features ensure a secure and relaxing drive. The S-Class is powered by a range of commanding engines that offer both performance and efficiency. Whether you're being chauffeured or taking the wheel yourself, this luxury sedan provides a journey of unmatched prestige and technology."
+          }
+        ]
+      },
+      {
+        "name": "Tesla",
+        "headquarters": "Palo Alto, California, USA",
+        "founded": 2003,
+        "notableModels": ["Tesla Model S", "Tesla Model 3", "Tesla Model X", "Tesla Model Y"],
+        "logo": "https://example.com/tesla-logo.jpg",
+        "products": [
+          {
+            "id": 17,
+            "image": "tesla_product1.jpg",
+            "name": "Tesla Model S",
+            "brandName": "Tesla",
+            "type": "Electric Sedan",
+            "price": 80000,
+            "shortDescription": "The Tesla Model S, a groundbreaking electric sedan, has redefined the automotive industry with its cutting-edge technology and electrifying performance. With a minimalist and high-tech interior, an impressive range on a single charge, and Tesla's Autopilot system, the Model S offers a glimpse into the future of driving. Whether you're on a cross-country road trip or cruising through city streets, this electric sedan delivers an exceptional combination of style, innovation, and sustainability.",
+            "rating": 4.9,
+            "description": "The Tesla Model S is a pioneer in the world of electric sedans. It combines cutting-edge technology, minimalist design, and remarkable performance. The Model S offers an impressive range on a single charge and features Tesla's Autopilot system, providing a glimpse into the future of driving. Whether you're embarking on a cross-country adventure or navigating city streets, this electric sedan offers a unique combination of style, innovation, and sustainability."
+          },
+          {
+            "id": 18,
+            "image": "tesla_product2.jpg",
+            "name": "Tesla Model 3",
+            "brandName": "Tesla",
+            "type": "Electric Sedan",
+            "price": 45000,
+            "shortDescription": "The Tesla Model 3, an accessible electric sedan, brings Tesla's cutting-edge technology to a wider audience. With a modern and spacious interior, impressive electric range, and a host of advanced features, the Model 3 represents a shift toward sustainable and tech-savvy transportation. Whether you're navigating city streets or embarking on a weekend getaway, this electric sedan offers an exceptional balance of affordability and innovation.",
+            "rating": 4.6,
+            "description": "The Tesla Model 3 is designed to make cutting-edge electric vehicle technology accessible to a wider audience. It offers a modern and spacious interior, an impressive electric range, and a suite of advanced features. The Model 3 is at the forefront of sustainable and tech-savvy transportation, making it a perfect choice for city driving or weekend getaways. This electric sedan combines affordability and innovation in a remarkable way."
+          },
+          {
+            "id": 19,
+            "image": "tesla_product3.jpg",
+            "name": "Tesla Model X",
+            "brandName": "Tesla",
+            "type": "Electric SUV",
+            "price": 85000,
+            "shortDescription": "The Tesla Model X, an electric SUV with futuristic features, redefines family-friendly transportation. With distinctive falcon-wing doors, spacious interior, and Tesla's Autopilot system, the Model X offers a blend of practicality and cutting-edge technology. Whether you're accommodating a family or embarking on outdoor adventures, this electric SUV provides versatility and an eco-conscious driving experience.",
+            "rating": 4.7,
+            "description": "The Tesla Model X represents the future of family-friendly transportation with its electric powertrain and distinctive falcon-wing doors. Its spacious interior and advanced features cater to families and adventure seekers. The Model X features Tesla's Autopilot system, adding convenience to your journeys. Whether you're taking the family for a ride or exploring the great outdoors, this electric SUV offers versatility, sustainability, and a unique driving experience."
+          },
+          {
+            "id": 20,
+            "image": "tesla_product4.jpg",
+            "name": "Tesla Model Y",
+            "brandName": "Tesla",
+            "type": "Electric SUV",
+            "price": 55000,
+            "shortDescription": "The Tesla Model Y, a compact electric SUV, embodies the future of electric mobility with a focus on versatility and efficiency. With a spacious and tech-savvy interior, impressive electric range, and advanced driver-assistance features, the Model Y is designed for urban and suburban living. Whether you're running errands or planning weekend getaways, this electric SUV offers a blend of sustainability and practicality.",
+            "rating": 4.6,
+            "description": "The Tesla Model Y represents the next step in electric mobility with a focus on versatility and efficiency. Its spacious and tech-savvy interior, impressive electric range, and advanced driver-assistance features make it ideal for urban and suburban living. Whether you're running errands around town or embarking on weekend getaways, this electric SUV offers a perfect combination of sustainability and practicality."
+          }
+        ]
+      },
+      {
+        "name": "Nissan",
+        "headquarters": "Yokohama, Japan",
+        "founded": 1933,
+        "notableModels": ["Nissan Altima", "Nissan Maxima", "Nissan Rogue", "Nissan Sentra"],
+        "logo": "https://example.com/nissan-logo.jpg",
+        "products": [
+          {
+            "id": 21,
+            "image": "nissan_product1.jpg",
+            "name": "Nissan Altima",
+            "brandName": "Nissan",
+            "type": "Sedan",
+            "price": 27000,
+            "shortDescription": "The Nissan Altima, a stylish and practical sedan, is designed for those who appreciate comfort and efficiency. With a well-appointed interior, advanced safety features, and a smooth ride, the Altima is an excellent choice for daily commuting and long journeys. Whether you're driving in the city or hitting the open road, this sedan offers an exceptional balance of style and reliability.",
+            "rating": 4.4,
+            "description": "The Nissan Altima is a stylish and practical sedan that combines comfort, efficiency, and an enjoyable driving experience. Its well-appointed interior is equipped with advanced safety features to ensure a secure ride. With a smooth and responsive ride, the Altima is an excellent choice for daily commuting and extended road trips. Whether you're navigating city streets or cruising on the open highway, this sedan provides a perfect combination of style and dependability."
+          },
+          {
+            "id": 22,
+            "image": "nissan_product2.jpg",
+            "name": "Nissan Maxima",
+            "brandName": "Nissan",
+            "type": "Sedan",
+            "price": 34000,
+            "shortDescription": "The Nissan Maxima, a sporty and upscale sedan, offers a blend of performance and luxury. With its premium interior, powerful V6 engine, and advanced technology, the Maxima delivers a thrilling and comfortable driving experience. Whether you're seeking an exhilarating ride or a stylish daily driver, this sedan provides a unique combination of power and refinement.",
+            "rating": 4.5,
+            "description": "The Nissan Maxima is a sporty and upscale sedan designed to deliver a powerful and luxurious driving experience. Its premium interior is complemented by a potent V6 engine and advanced technology. Whether you're craving an exhilarating ride or a stylish daily driver, the Maxima offers a unique blend of performance and refinement that's hard to match."
+          },
+          {
+            "id": 23,
+            "image": "nissan_product3.jpg",
+            "name": "Nissan Rogue",
+            "brandName": "Nissan",
+            "type": "SUV",
+            "price": 29000,
+            "shortDescription": "The Nissan Rogue, a versatile and family-friendly SUV, offers a spacious interior, advanced safety features, and excellent fuel economy. With its comfortable ride and practical design, the Rogue is a top choice for families and commuters. Whether you're running daily errands or embarking on road trips, this SUV provides a superb balance of functionality and comfort.",
+            "rating": 4.6,
+            "description": "The Nissan Rogue is a versatile and family-friendly SUV designed to cater to the needs of modern life. Its spacious interior is loaded with advanced safety features, and its excellent fuel economy helps you save at the pump. With a comfortable and smooth ride, the Rogue is the ideal choice for families and daily commuters. Whether you're tackling daily errands or setting out on extended road adventures, this SUV offers a perfect blend of functionality and comfort."
+          },
+          {
+            "id": 24,
+            "image": "nissan_product4.jpg",
+            "name": "Nissan Sentra",
+            "brandName": "Nissan",
+            "type": "Sedan",
+            "price": 23000,
+            "shortDescription": "The Nissan Sentra, a compact and efficient sedan, is tailored for urban driving and practicality. With a comfortable and well-appointed interior, good fuel efficiency, and a user-friendly infotainment system, the Sentra is an excellent choice for city dwellers and daily commuters. Whether you're navigating busy streets or heading to work, this sedan offers a delightful combination of convenience and affordability.",
+            "rating": 4.3,
+            "description": "The Nissan Sentra is a compact and efficient sedan designed for urban living. Its comfortable interior is equipped with a user-friendly infotainment system, ensuring that you stay connected and entertained on your daily drives. The Sentra is an excellent choice for city dwellers and daily commuters who value both convenience and affordability. Whether you're maneuvering through busy streets or heading to work, this sedan provides a delightful blend of practicality and comfort."
+          }
+        ]
+      }
+    ]
+  }
+  
