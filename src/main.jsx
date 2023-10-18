@@ -10,6 +10,8 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 import Home from './Pages/Home/Home.jsx';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import MyCart from './Pages/MyCart/MyCart';
+import Login from './Pages/LogIn/Login';
+import Register from './Pages/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -26,8 +28,16 @@ const router = createBrowserRouter([
         element: <AddProduct />
       },
       {
-        path:'/myCart',
-        element:<MyCart/>
+        path: '/myCart',
+        element: <MyCart />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
+      {
+        path:'/register',
+        element:<Register/>
       }
     ],
   },
