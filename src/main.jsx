@@ -12,6 +12,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import MyCart from './Pages/MyCart/MyCart';
 import Login from './Pages/LogIn/Login';
 import Register from './Pages/Register/Register';
+import AuthProvider from './components/providers/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -36,8 +37,8 @@ const router = createBrowserRouter([
         element: <Login />
       },
       {
-        path:'/register',
-        element:<Register/>
+        path: '/register',
+        element: <Register />
       }
     ],
   },
@@ -45,6 +46,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

@@ -1,7 +1,24 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const Navbar = () => {
+    const { logOut, user, loading } = useContext(AuthContext)
+
+    if(loading){
+        return <span className="loading loading-spinner loading-lg"></span>
+    }
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
 
 
     const navLinks = <>
@@ -11,7 +28,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar max-w-[1440px] lg:mx-auto">
+        <div className="navbar max-w-[1440px] lg:mx-auto py-4 bg-gray-200 rounded">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,23 +50,24 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-               <Link to='/login'> <button className="btn btn-primary">Login</button></Link>
-                <div className="dropdown dropdown-left">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a className="justify-between">
-                                Profile
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
-                </div>
+                {
+                    user ? <div className="dropdown dropdown-left dropdown-bottom">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className=" rounded-full">
+                                <img src={user.photoURL} />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                            <p className="text-xl font-semibold">{user.displayName}</p>
+                            </li>
+                            <li><button onClick={handleLogout} className="btn btn-sm bg-purple-600 text-white">Logout</button></li>
+                        </ul>
+                    </div>
+                        : 
+                        <Link to='/login'> <button className="btn btn-primary">Login</button></Link>
+                }
+
             </div>
         </div>
     );
