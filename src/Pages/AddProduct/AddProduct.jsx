@@ -15,7 +15,23 @@ const AddProduct = () => {
         const photo = form.photo.value;
 
         const product = {name,description,brand,type,price,ratting,photo}
-         console.log(product)
+
+        // clearing field
+        // form.reset()
+        
+        //  sending product to server
+
+        fetch('http://localhost:5000/products',{
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body:JSON.stringify(product)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
     }
 
     return (
