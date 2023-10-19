@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="lg:mx-auto w-full max-w-[1440px] p-4 py-6 lg:py-8 lg:pl-0 pl-10">
                     <div className="md:flex md:justify-between  ">
                         <div className="mb-6 md:mb-0">
-                            <p className="text-4xl font-bold text-center">ET- <span className="text-blue-600">EVENTS</span></p>
+                            <p className="text-4xl font-bold text-center">My- <span className="text-blue-600">LOGO</span></p>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>

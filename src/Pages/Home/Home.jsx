@@ -4,6 +4,8 @@ import Banner from "../../components/Banner/Banner";
 import BrandCard from "../../components/BrandCard/BrandCard";
 import { Toaster } from "react-hot-toast";
 import Footer from "../../components/Footer/Footer";
+import Review from "../../components/Review/Review";
+import LatestCars from "../../components/LatestCars/LatestCars";
 
 
 const Home = () => {
@@ -32,6 +34,8 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <LatestCars></LatestCars>
+            <Review></Review>
             <Footer></Footer>
         </div>
     );
