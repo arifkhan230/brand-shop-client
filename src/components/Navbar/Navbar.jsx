@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import userLogo from '../../assets/profile-user.png'
 
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {
                             user && <>
-                                <img className="w-16 rounded-full h-16 " src={user.photoURL} />
+                                <img className="w-16 rounded-full h-16 " src={user.photoURL ? user.photoURL : userLogo } />
                                 <li>
                                     <p className="text-xl font-semibold">{user.displayName}</p>
                                 </li>

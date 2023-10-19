@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Banner from "../../components/Banner/Banner";
 import BrandCard from "../../components/BrandCard/BrandCard";
+import { Toaster } from "react-hot-toast";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -19,6 +21,7 @@ const Home = () => {
 
     return (
         <div>
+            <Toaster></Toaster>
             <Banner></Banner>
             <div>
                 <h2 className="text-3xl font-bold text-center my-12 "> All Brands </h2>
@@ -29,6 +32,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

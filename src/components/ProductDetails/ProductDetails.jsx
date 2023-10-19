@@ -1,14 +1,37 @@
+import toast, { Toaster } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 
 const ProductDetails = () => {
     const product = useLoaderData()
-    const { _id, name, photo, brand, description, price, ratting, type, } = product;
-    console.log(product)
+    const {  name, photo, brand, description, price, ratting, type, } = product;
+    // console.log(product)
+
+
+    const handleAddToCart= ()=>{
+        // console.log(_id)
+
+        fetch('http://localhost:5000/carts',{
+            method: "POST",
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(product)
+
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+            toast.success('Product successfully added to the Cart')
+        })
+
+    }
+
     return (
-        <div className="">
-            <div className="max-w-[1440px] lg:mx-auto mt-12">
-                <h2 className="text-3xl font-bold text-center my-10">Details Information</h2>
+        <div className="bg-gray-800 min-h-screen ">
+            <Toaster></Toaster>
+            <div className="max-w-[1440px] lg:mx-auto">
+                <h2 className="text-3xl font-bold text-center py-10 text-white">Details Information</h2>
 
                 <div className="flex flex-col lg:flex-row bg-white border rounded shadow-xl ">
                     {/* image  */}
@@ -24,7 +47,7 @@ const ProductDetails = () => {
                         <p className="text-xl font-bold">Rating :{ratting}</p>
                         <p className="text-xl font-bold">Price: {price}</p>
                         <div>
-                            <button className="btn btn-outline">Add to Cart</button>
+                            <button onClick={handleAddToCart} className="btn btn-outline">Add to Cart</button>
                         </div>
                     </div>
                 </div>
