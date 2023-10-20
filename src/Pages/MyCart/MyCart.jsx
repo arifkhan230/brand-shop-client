@@ -11,6 +11,7 @@ const MyCart = () => {
 
     const handleDelete =(_id)=>{
         console.log('clicked')
+        console.log(_id)
         fetch(`https://brand-shop-server-ten-omega.vercel.app/carts/${_id}`,{
             method: "DELETE"
         })

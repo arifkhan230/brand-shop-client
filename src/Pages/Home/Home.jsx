@@ -14,7 +14,7 @@ const Home = () => {
         fetch('https://brand-shop-server-ten-omega.vercel.app/brands')
             .then(res => res.json())
             .then(data => {
-                // console.log(data)
+                console.log(data)
                 setBrands(data)
             })
     }, [])
@@ -35,8 +35,8 @@ const Home = () => {
             </div>
             <LatestCars></LatestCars>
             <Review></Review>
-            
-            
+
+
         </div>
     );
 };
