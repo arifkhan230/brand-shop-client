@@ -4,8 +4,8 @@ import image3 from '../../assets/white-offroader-jeep-parking (2).jpg'
 
 const BrandPageSlider = () => {
     return (
-        <div className=" max-h-[70vh]">
-            <div className="carousel lg:h-[70vh] w-full">
+        <div className=" max-h-[70vh] relative ">
+            <div className="carousel lg:h-[70vh] w-full z-40 ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={image1} className="w-full object-contain lg:object-cover" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -34,6 +34,11 @@ const BrandPageSlider = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div> */}
+            </div>
+            <div className='flex justify-center text-justify items-center absolute -bottom-5 left-28 lg:top-0 lg:right-96 lg:left-96  z-50'>
+                <p className='lg:text-5xl font-bold text-black p-6 bg-white'>Hit the Road <br /> 
+                Buy a Car and Get a Free <br /> 
+                Weekend Getaway</p>
             </div>
         </div>
     );
