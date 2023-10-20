@@ -18,7 +18,7 @@ const AddProduct = () => {
         const product = { name, description, brand, type, price, ratting, photo }
 
         // clearing field
-        // form.reset()
+        form.reset()
 
         //  sending product to server
 

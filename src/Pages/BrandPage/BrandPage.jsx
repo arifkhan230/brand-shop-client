@@ -8,6 +8,9 @@ import BrandPageSlider from "../../components/BrandPageSlider/BrandPageSlider";
 const BrandPage = () => {
     const products = useLoaderData()
     console.log(products.length)
+    if(products.length== 0){
+        return <p>No product available</p>
+    }
 
     return (
         <div>
