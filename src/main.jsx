@@ -33,9 +33,9 @@ const router = createBrowserRouter([
         element: <PrivateRout><AddProduct /></PrivateRout>
       },
       {
-        path: '/myCart',
+        path: '/userCart',
         element: <PrivateRout><MyCart /></PrivateRout>,
-        loader: () => fetch('https://brand-shop-server-ten-omega.vercel.app/carts')
+        loader: () => fetch('https://brand-shop-server-ten-omega.vercel.app/userCart')
       },
       {
         path: '/login',

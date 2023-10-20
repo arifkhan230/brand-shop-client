@@ -5,6 +5,7 @@ import { useLoaderData } from "react-router-dom";
 
 const MyCart = () => {
     const loadedCharts = useLoaderData()
+    console.log(loadedCharts)
     const [carts, setCarts] = useState(loadedCharts)
 
 

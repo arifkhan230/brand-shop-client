@@ -1,22 +1,38 @@
+import { useContext } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const ProductDetails = () => {
     const product = useLoaderData()
     const {  name, photo, brand, description, price, ratting, type, } = product;
     // console.log(product)
+    const {user} = useContext(AuthContext)
+        console.log(user)
+        const userEmail = user.email;
+        console.log(userEmail)
+        const userCart ={
+            name:name,
+            photo:photo,
+            brand:brand,
+            description:description,
+            price: price,
+            ratting: ratting,
+            type:type,
+            email:userEmail
+        }
 
 
     const handleAddToCart= ()=>{
         // console.log(_id)
-
+        
         fetch('https://brand-shop-server-ten-omega.vercel.app/carts',{
             method: "POST",
             headers:{
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(product)
+            body: JSON.stringify(userCart)
 
         })
         .then(res=>res.json())
