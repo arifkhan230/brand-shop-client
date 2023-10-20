@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="mt-20"> 
+        <div className=""> 
 
             <footer className="bg-gray-400 dark:bg-gray-900">
                 <div className="lg:mx-auto w-full max-w-[1440px] p-4 py-6 lg:py-8 lg:pl-0 pl-10">
@@ -17,10 +17,10 @@ const Footer = () => {
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li>
-                                        <Link to="/blog">Blog</Link>
+                                        <Link to="/addProduct">Add Product</Link>
                                     </li>
                                     <li className="mt-4">
-                                        <Link to="/about">About</Link>
+                                        <Link to="/myCart">my Cart</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -48,8 +48,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <p className="text-center text-sm"> All rights reserved bt ET-EVENTS</p>
+                    {/* <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> */}
+                    <p className="text-center text-sm mt-8"> All rights reserved By Brand Shop</p>
                 </div>
             </footer>
 
