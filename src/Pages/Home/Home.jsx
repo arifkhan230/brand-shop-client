@@ -11,7 +11,7 @@ const Home = () => {
     const [brands, setBrands] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/brands')
+        fetch('https://brand-shop-server-ten-omega.vercel.app/brands')
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -35,6 +35,7 @@ const Home = () => {
             </div>
             <LatestCars></LatestCars>
             <Review></Review>
+            
             
         </div>
     );

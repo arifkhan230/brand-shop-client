@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const handleAddToCart= ()=>{
         // console.log(_id)
 
-        fetch('http://localhost:5000/carts',{
+        fetch('https://brand-shop-server-ten-omega.vercel.app/carts',{
             method: "POST",
             headers:{
                 'content-type': 'application/json'
@@ -28,18 +28,18 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className="bg-gray-800 min-h-screen ">
+        <div className="bg-gray-800 min-h-screen">
             <Toaster></Toaster>
             <div className="max-w-[1440px] lg:mx-auto">
                 <h2 className="text-3xl font-bold text-center py-10 text-white">Details Information</h2>
 
-                <div className="flex flex-col lg:flex-row bg-white border rounded shadow-xl ">
+                <div className="flex flex-col lg:flex-row bg-white border rounded shadow-xl mx-4 lg:mx-0 ">
                     {/* image  */}
                     <div className="lg:w-1/2">
-                        <img className="h-full" src={photo} alt="" />
+                        <img className="lg:h-[600px] w-full" src={photo} alt="" />
                     </div>
                     {/* details */}
-                    <div className="lg:w-1/2 lg:p-8 space-y-6">
+                    <div className="lg:w-1/2 p-4 lg:p-8 space-y-6">
                         <h2 className="text-2xl font-bold">{name}</h2>
                         <p className="text-xl font-bold">Brand: {brand}</p>
                         <p className="text-justify">{description}</p>

@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element: <PrivateRout><MyCart /></PrivateRout>,
-        loader: () => fetch('http://localhost:5000/carts')
+        loader: () => fetch('https://brand-shop-server-ten-omega.vercel.app/carts')
       },
       {
         path: '/login',
@@ -48,17 +48,17 @@ const router = createBrowserRouter([
       {
         path: '/brandPage/:brandName',
         element: <BrandPage></BrandPage>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.brandName}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/products/${params.brandName}`)
       },
       {
         path: '/update/:id',
         element:<PrivateRout><UpdateProduct></UpdateProduct></PrivateRout>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
       },
       {
         path: '/details/:id',
         element: <PrivateRout><ProductDetails></ProductDetails></PrivateRout>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
       }
 
     ],

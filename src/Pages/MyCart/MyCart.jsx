@@ -10,7 +10,7 @@ const MyCart = () => {
 
     const handleDelete =(_id)=>{
         console.log('clicked')
-        fetch(`http://localhost:5000/carts/${_id}`,{
+        fetch(`https://brand-shop-server-ten-omega.vercel.app/carts/${_id}`,{
             method: "DELETE"
         })
         .then(res=>res.json())

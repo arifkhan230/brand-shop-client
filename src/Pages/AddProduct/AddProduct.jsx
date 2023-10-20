@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 
 
 const AddProduct = () => {
@@ -21,7 +22,7 @@ const AddProduct = () => {
 
         //  sending product to server
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://brand-shop-server-ten-omega.vercel.app/products', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -31,11 +32,15 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                if(data.insertedId){
+                    toast.success('Product added successfully')
+                }
             })
     }
 
     return (
         <div className="lg:mx-0 lg:bg-[url('https://i.ibb.co/p1ztVxx/Tesla-Model-X.jpg')] bg-cover bg-fixed">
+           
             <div className="max-w-[1440px] lg:mx-auto lg:py-20">
                 <div className="lg:w-3/4 mx-auto bg-white py-20 px-4">
                     <h2 className=" text-3xl font-bold text-center mb-8">Add New Product</h2>
@@ -50,6 +55,7 @@ const AddProduct = () => {
                             </label>
                         </div>
                         {/* product details */}
+                        <Toaster></Toaster>
                         <div>
                             <label className="label">
                                 <span className="label-text text-lg text-bold">Product Description</span>
