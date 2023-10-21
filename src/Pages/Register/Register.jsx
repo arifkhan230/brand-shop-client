@@ -76,27 +76,27 @@ const Register = () => {
                     <form onSubmit={handleRegister}>
                         {/* name */}
                         <div className='relative mb-6'>
-                            <input type="text" name="name" placeholder="Your name" className="input input-bordered rounded-full w-full placeholder:text-black" id="name" required />
+                            <input type="text" name="name" placeholder="Your name" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="name" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaUserCircle></FaUserCircle></span>
                         </div>
                         {/* email */}
                         <div className='relative'>
-                            <input type="email" name="email" placeholder="Your email" className="input input-bordered rounded-full w-full placeholder:text-black" id="email" required />
+                            <input type="email" name="email" placeholder="Your email" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="email" required />
                             <span className='absolute right-6 top-3 text-2xl'><HiMail></HiMail></span>
                         </div>
                         {/* password */}
                         <div className='relative mt-6'>
-                            <input type="password" name="password" placeholder="Password" className="input input-bordered rounded-full w-full placeholder:text-black" id="password" required />
+                            <input type="password" name="password" placeholder="Password" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="password" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaLock></FaLock></span>
                         </div>
                         {/* confirm password */}
                         <div className='relative mt-6'>
-                            <input type="password" name="confirmPassword" placeholder="Confirm Password" className="input input-bordered rounded-full w-full placeholder:text-black" id="confirmPassword" required />
+                            <input type="password" name="confirmPassword" placeholder="Confirm Password" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="confirmPassword" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaLock></FaLock></span>
                         </div>
                         {/* photo */}
                         <div className='relative mt-6'>
-                            <input type="url" name="photo" placeholder="Photo URL" className="input input-bordered rounded-full w-full placeholder:text-black" id="photo" required />
+                            <input type="url" name="photo" placeholder="Photo URL" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="photo" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaImage></FaImage></span>
                         </div>
 

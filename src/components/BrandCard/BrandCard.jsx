@@ -6,7 +6,7 @@ const BrandCard = ({ brand }) => {
     // console.log(brand)
     return (
         <Link to={`/brandPage/${brand.brandName}`}>
-            <div className="card bg-white rounded-lg shadow ">
+            <div className="card bg-white rounded-lg shadow-xl border ">
                 <figure className="px-10 pt-10">
                     <img src={brand.img} alt="Shoes" className="rounded-xl w-full h-60  object-contain" />
                 </figure>

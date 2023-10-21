@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../components/providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 
 const MyCart = () => {
     const loadedCharts = useLoaderData()
-    console.log(loadedCharts)
-    const [carts, setCarts] = useState(loadedCharts)
+    // console.log(loadedCharts)
+    const {user} = useContext(AuthContext)
+    const [carts, setCarts] = useState([])
+
+    useEffect(()=>{
+        const userCart = loadedCharts.filter(cart =>cart.email ===user.email)
+        setCarts(userCart)
+    },[loadedCharts,user])
 
 
     const handleDelete =(_id)=>{
@@ -29,6 +37,9 @@ const MyCart = () => {
 
     return (
         <div className="max-w-[1440px] lg:mx-auto pb-20">
+            <Helmet>
+                <title>Car Wonders | MyCart</title>
+            </Helmet>
             
             <div className="mx-4 lg:mx-0">
                 {

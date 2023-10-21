@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import carLogo from '../../assets/car-logo.png'
 
 
 
@@ -8,9 +9,9 @@ const Footer = () => {
 
             <footer className="bg-gray-400 dark:bg-gray-900">
                 <div className="lg:mx-auto w-full max-w-[1440px] p-4 py-6 lg:py-8 lg:pl-0 pl-10">
-                    <div className="md:flex md:justify-between  ">
+                    <div className="md:flex md:justify-around  ">
                         <div className="mb-6 md:mb-0">
-                            <p className="text-4xl font-bold text-center">My- <span className="text-blue-600">LOGO</span></p>
+                           <img className="w-full h-40 object-cover" src={carLogo} alt="" />
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>

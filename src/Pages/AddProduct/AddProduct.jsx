@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import toast, { Toaster } from "react-hot-toast";
 
 
@@ -40,6 +41,9 @@ const AddProduct = () => {
 
     return (
         <div className="lg:mx-0 lg:bg-[url('https://i.ibb.co/p1ztVxx/Tesla-Model-X.jpg')] bg-cover bg-fixed">
+            <Helmet>
+                <title>Car Wonders | Add Product</title>
+            </Helmet>
            
             <div className="max-w-[1440px] lg:mx-auto lg:py-20">
                 <div className="lg:w-3/4 mx-auto bg-white py-20 px-4">

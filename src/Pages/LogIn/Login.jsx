@@ -55,16 +55,16 @@ const Login = () => {
                     <h2 className="text-2xl text-center font-bold my-8">LogIn Now!!</h2>
                     <form onSubmit={handleLogin}>
                         <div className='relative'>
-                            <input type="email" name="email" placeholder="Your email" className="input input-bordered rounded-full w-full placeholder:text-black" id="email" required />
+                            <input type="email" name="email" placeholder="Your email" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="email" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaUserCircle></FaUserCircle></span>
                         </div>
                         <div className='relative mt-6'>
-                            <input type="password" name="password" placeholder="Your Password" className="input input-bordered rounded-full w-full placeholder:text-black" id="password" required />
+                            <input type="password" name="password" placeholder="Your Password" className="input input-bordered bg-white rounded-full w-full placeholder:text-black" id="password" required />
                             <span className='absolute right-6 top-3 text-2xl'><FaLock></FaLock></span>
                         </div>
                         <div className='mt-4 flex justify-between px-2'>
                             <div>
-                                <input type="checkbox" name="remember" id="" />
+                                <input className='bg-white' type="checkbox" name="remember" id="" />
                                 <span className='ml-2'>Remember me</span>
                             </div>
                             <div>

@@ -5,6 +5,8 @@ import BrandCard from "../../components/BrandCard/BrandCard";
 import { Toaster } from "react-hot-toast";
 import Review from "../../components/Review/Review";
 import LatestCars from "../../components/LatestCars/LatestCars";
+import Footer from "../../components/Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -14,7 +16,7 @@ const Home = () => {
         fetch('https://brand-shop-server-ten-omega.vercel.app/brands')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 setBrands(data)
             })
     }, [])
@@ -22,6 +24,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Car Wonders | Home</title>
+            </Helmet>
             <Toaster></Toaster>
             <Banner></Banner>
             <div>
@@ -29,12 +34,13 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 max-w-[1440px] lg:mx-auto mx-4">
 
                     {
-                        brands.map(brand => <BrandCard key={brand._id} brand={brand}></BrandCard>)
+                        brands && brands.map(brand => <BrandCard key={brand._id} brand={brand}></BrandCard>)
                     }
                 </div>
             </div>
             <LatestCars></LatestCars>
             <Review></Review>
+            <Footer></Footer>
 
 
         </div>

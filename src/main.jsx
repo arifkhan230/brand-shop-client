@@ -17,6 +17,7 @@ import BrandPage from './Pages/BrandPage/BrandPage';
 import UpdateProduct from './components/UpdateProduct/UpdateProduct';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import PrivateRout from './components/PrivateRoute/PrivateRout';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -48,17 +49,17 @@ const router = createBrowserRouter([
       {
         path: '/brandPage/:brandName',
         element: <BrandPage></BrandPage>,
-        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/products/${params.brandName}`)
+        loader: ({ params }) => fetch(`https://brand-shop-server-ten-omega.vercel.app/products/${params.brandName}`)
       },
       {
         path: '/update/:id',
-        element:<PrivateRout><UpdateProduct></UpdateProduct> </PrivateRout>,
-        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
+        element: <PrivateRout><UpdateProduct></UpdateProduct> </PrivateRout>,
+        loader: ({ params }) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
       },
       {
         path: '/details/:id',
         element: <PrivateRout><ProductDetails></ProductDetails></PrivateRout>,
-        loader: ({params}) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-shop-server-ten-omega.vercel.app/product/${params.id}`)
       }
 
     ],
@@ -68,7 +69,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
     </AuthProvider>
   </React.StrictMode>,
 )

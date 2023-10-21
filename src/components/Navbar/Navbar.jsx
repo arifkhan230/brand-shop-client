@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import userLogo from '../../assets/profile-user.png'
+import carLogo from '../../assets/car-logo.png'
 
 
 const Navbar = () => {
@@ -42,16 +43,17 @@ const Navbar = () => {
 
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/addProduct">Add Product</NavLink></li>
-        <li><NavLink to="/myCart">My cart</NavLink></li>
+        <li className="text-lg"><NavLink to="/">Home</NavLink></li>
+        <li className="text-lg"><NavLink to="/addProduct">Add Product</NavLink></li>
+        <li className="text-lg"><NavLink to="/myCart">My cart</NavLink></li>
     </>
 
     return (
         <div className="bg-gray-200">
             <div className="navbar max-w-[1440px] lg:mx-auto py-4 bg-gray-200 rounded">
                 <div className="flex lg:navbar-start border w-full justify-between">
-                    <a className="btn btn-ghost normal-case text-xl">My Logo</a>
+                    {/* <a className="btn btn-ghost normal-case text-xl">My Logo</a> */}
+                    <img className="w-60 h-12 object-cover" src={carLogo} alt="" />
 
                     <div className="dropdown dropdown-left">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
