@@ -14,8 +14,8 @@ Welcome to AutoShop. We currently selling Latest cars from top brands . LIke BMW
 
  ## Technology used
  
-Front-end: HTML, CSS,Tailwind, JavaScript React,
-Back-End: Express.js Node.js MongoDB,
+##### Front-end: HTML, CSS,Tailwind, JavaScript React,
+##### Back-End: Express.js Node.js MongoDB,
 
 ## Website here
 
